@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 import os
 os.system("clear")
-os.system("cd firmware && make all")
+os.system("cd firmware && make clean && make all")
