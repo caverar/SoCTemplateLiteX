@@ -19,7 +19,7 @@ from litex.soc.cores.clock import *
 
 from Hardware.gpio import gpio
 
-    # IOs ----------------------------------------------------------------------------------------------
+# IOs ----------------------------------------------------------------------------------------------
 
 
 _io = [
@@ -162,16 +162,8 @@ class BaseSoC(SoCCore):
 
 def main():
 
-
-
-
-
-
     soc = BaseSoC(platform)
-
     # Build --------------------------------------------------------------------------------------------
-    
-
     builder = Builder(soc, output_dir="build", csr_csv="memoryMap.csv", memory_x="memoryStructure.x", generate_doc="x.doc")
     builder.build(build_name="top")
 
