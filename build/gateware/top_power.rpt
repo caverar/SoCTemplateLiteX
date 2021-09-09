@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Sun Apr  4 23:13:25 2021
-| Host             : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.2 LTS
+| Date             : Wed Sep  8 22:43:47 2021
+| Host             : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file top_power.rpt
 | Design           : top
 | Device           : xc7a35tcpg236-1
@@ -54,12 +54,12 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        4 |       --- |             --- |
 | Slice Logic              |    <0.001 |     4578 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     2405 |     20800 |           11.56 |
+|   LUT as Logic           |    <0.001 |     2407 |     20800 |           11.57 |
 |   CARRY4                 |    <0.001 |      127 |      8150 |            1.56 |
 |   Register               |    <0.001 |     1718 |     41600 |            4.13 |
 |   LUT as Distributed RAM |    <0.001 |       16 |      9600 |            0.17 |
 |   Others                 |     0.000 |       14 |       --- |             --- |
-| Signals                  |    <0.001 |     4057 |       --- |             --- |
+| Signals                  |    <0.001 |     4052 |       --- |             --- |
 | Block RAM                |    <0.001 |       19 |        50 |           38.00 |
 | MMCM                     |     0.052 |        1 |         5 |           20.00 |
 | DSPs                     |    <0.001 |        4 |        90 |            4.44 |

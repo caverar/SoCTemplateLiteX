@@ -2,19 +2,19 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr  4 23:10:40 2021
-# Process ID: 76899
-# Current directory: /home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware
+# Start of session at: Wed Sep  8 22:39:46 2021
+# Process ID: 14153
+# Current directory: /home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware
 # Command line: vivado -mode batch -source top.tcl
-# Log file: /home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/vivado.log
-# Journal file: /home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/vivado.jou
+# Log file: /home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/vivado.log
+# Journal file: /home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/vivado.jou
 #-----------------------------------------------------------
 source top.tcl
 # create_project -force -name top -part xc7a35tcpg236-1
 # set_msg_config -id {Common 17-55} -new_severity {Warning}
-# read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v}
+# read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v}
 # read_verilog {/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v}
-# read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v}
+# read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v}
 # read_xdc top.xdc
 # set_property PROCESSING_ORDER EARLY [get_files top.xdc]
 # synth_design -directive default -top top -part xc7a35tcpg236-1
@@ -23,32 +23,32 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 77000 
+INFO: Helper process launched with PID 14353 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1360.789 ; gain = 0.000 ; free physical = 833 ; free virtual = 5455
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1335.906 ; gain = 58.914 ; free physical = 1180 ; free virtual = 3358
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:4]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:275]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:277]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:506]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:506]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:507]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:507]
-INFO: [Synth 8-3876] $readmem data file 'mem.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1637]
-INFO: [Synth 8-3876] $readmem data file 'mem_1.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1657]
-INFO: [Synth 8-3876] $readmem data file 'mem_2.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1677]
-INFO: [Synth 8-3876] $readmem data file 'mem_3.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1689]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1398]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1432]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1456]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1511]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:4]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:275]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:277]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:506]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:506]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:507]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:507]
+INFO: [Synth 8-3876] $readmem data file 'mem.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1637]
+INFO: [Synth 8-3876] $readmem data file 'mem_1.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1657]
+INFO: [Synth 8-3876] $readmem data file 'mem_2.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1677]
+INFO: [Synth 8-3876] $readmem data file 'mem_3.init' is read successfully [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1689]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1398]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1432]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1456]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1511]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/home/camilo/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [/home/camilo/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6157] synthesizing module 'gpio' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v:23]
 	Parameter data_width bound to: 4 - type: integer 
-WARNING: [Synth 8-5788] Register sw_reg_reg in module gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v:39]
-WARNING: [Synth 8-5788] Register irq_reg in module gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'gpio' (2#1) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v:23]
+WARNING: [Synth 8-5788] Register sw_reg_reg in module gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v:39]
+WARNING: [Synth 8-5788] Register irq_reg in module gpio is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (2#1) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v:23]
 INFO: [Synth 8-6157] synthesizing module 'VexRiscv' [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:1053]
 INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:2221]
 INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:46]
@@ -144,28 +144,28 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/camilo/Xilinx/Vivad
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (7#1) [/home/camilo/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
-WARNING: [Synth 8-350] instance 'MMCME2_ADV' of module 'MMCME2_ADV' requires 33 connections, but only 7 given [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1835]
-WARNING: [Synth 8-6014] Unused sequential element __main___LED_REG_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1419]
-WARNING: [Synth 8-6014] Unused sequential element __main___SW_REG_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1420]
-WARNING: [Synth 8-6014] Unused sequential element builder_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1421]
-WARNING: [Synth 8-6014] Unused sequential element builder_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1429]
-WARNING: [Synth 8-6014] Unused sequential element __main___soccontroller_scratch_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1451]
-WARNING: [Synth 8-6014] Unused sequential element __main___soccontroller_bus_errors_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1452]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_load_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1486]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_reload_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1490]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_en_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1494]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_value_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1499]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1500]
-WARNING: [Synth 8-6014] Unused sequential element __main___timer_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1508]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_txfull_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1538]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_rxempty_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1539]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1540]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1548]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_txempty_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1549]
-WARNING: [Synth 8-6014] Unused sequential element __main___uart_rxfull_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1550]
-WARNING: [Synth 8-6014] Unused sequential element memdat_1_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1698]
-WARNING: [Synth 8-6014] Unused sequential element memdat_3_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1715]
-INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:4]
+WARNING: [Synth 8-350] instance 'MMCME2_ADV' of module 'MMCME2_ADV' requires 33 connections, but only 7 given [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1835]
+WARNING: [Synth 8-6014] Unused sequential element main_LED_REG_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1419]
+WARNING: [Synth 8-6014] Unused sequential element main_SW_REG_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1420]
+WARNING: [Synth 8-6014] Unused sequential element builder_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1421]
+WARNING: [Synth 8-6014] Unused sequential element builder_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1429]
+WARNING: [Synth 8-6014] Unused sequential element main_soccontroller_scratch_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1451]
+WARNING: [Synth 8-6014] Unused sequential element main_soccontroller_bus_errors_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1452]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_load_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1486]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_reload_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1490]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_en_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1494]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_value_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1499]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1500]
+WARNING: [Synth 8-6014] Unused sequential element main_timer_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1508]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_txfull_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1538]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_rxempty_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1539]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_status_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1540]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_enable_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1548]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_txempty_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1549]
+WARNING: [Synth 8-6014] Unused sequential element main_uart_rxfull_re_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1550]
+WARNING: [Synth 8-6014] Unused sequential element memdat_1_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1698]
+WARNING: [Synth 8-6014] Unused sequential element memdat_3_reg was removed.  [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1715]
+INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:4]
 WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[31]
 WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[30]
 WARNING: [Synth 8-3331] design DataCache has unconnected port io_cpu_execute_address[29]
@@ -268,7 +268,7 @@ WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_deco
 WARNING: [Synth 8-3331] design InstructionCache has unconnected port io_cpu_decode_pc[14]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1390.707 ; gain = 29.918 ; free physical = 817 ; free virtual = 5439
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1406.656 ; gain = 129.664 ; free physical = 1142 ; free virtual = 3328
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -281,10 +281,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1390.707 ; gain = 29.918 ; free physical = 804 ; free virtual = 5432
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1406.656 ; gain = 129.664 ; free physical = 1147 ; free virtual = 3333
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1390.707 ; gain = 29.918 ; free physical = 804 ; free virtual = 5432
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1406.656 ; gain = 129.664 ; free physical = 1147 ; free virtual = 3333
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -293,42 +293,42 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc]
-WARNING: [Vivado 12-4379] -period contains time 140000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:72]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:72]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-Finished Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc]
+WARNING: [Vivado 12-4379] -period contains time 140000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:72]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:72]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+Finished Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.129 ; gain = 0.000 ; free physical = 563 ; free virtual = 5191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1733.078 ; gain = 0.000 ; free physical = 776 ; free virtual = 2999
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.129 ; gain = 0.000 ; free physical = 564 ; free virtual = 5192
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1733.078 ; gain = 0.000 ; free physical = 777 ; free virtual = 3001
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   FD => FDRE: 8 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.129 ; gain = 0.000 ; free physical = 564 ; free virtual = 5192
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1717.129 ; gain = 0.000 ; free physical = 564 ; free virtual = 5192
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1733.078 ; gain = 0.000 ; free physical = 778 ; free virtual = 3001
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1733.078 ; gain = 0.000 ; free physical = 778 ; free virtual = 3001
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.129 ; gain = 356.340 ; free physical = 656 ; free virtual = 5284
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1733.078 ; gain = 456.086 ; free physical = 875 ; free virtual = 3097
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.129 ; gain = 356.340 ; free physical = 655 ; free virtual = 5283
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1733.078 ; gain = 456.086 ; free physical = 875 ; free virtual = 3098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1717.129 ; gain = 356.340 ; free physical = 656 ; free virtual = 5284
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1733.078 ; gain = 456.086 ; free physical = 874 ; free virtual = 3098
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "lineLoader_fire" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "iBusWishbone_CTI" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -348,14 +348,14 @@ INFO: [Synth 8-5544] ROM "CsrPlugin_interrupt_code" won't be mapped to Block RAM
 INFO: [Synth 8-5544] ROM "execute_MulPlugin_aSigned" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "execute_MulPlugin_bSigned" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "execute_to_memory_BRANCH_CALC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:713]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:683]
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1703]
-WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1720]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:713]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:683]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_2_reg' and it is trimmed from '10' to '8' bits. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1703]
+WARNING: [Synth 8-3936] Found unconnected internal register 'memdat_4_reg' and it is trimmed from '10' to '8' bits. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1720]
 INFO: [Synth 8-5544] ROM "builder_rs232phytx_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "builder_rs232phyrx_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1717.129 ; gain = 356.340 ; free physical = 641 ; free virtual = 5271
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 1733.078 ; gain = 456.086 ; free physical = 802 ; free virtual = 3033
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -623,37 +623,37 @@ RAM Pipeline Warning: Read Address Register Found For RAM mem_2_reg. We will not
 RAM Pipeline Warning: Read Address Register Found For RAM mem_1_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM mem_2_reg. We will not be able to pipeline it. This may degrade performance. 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (FD)
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[1]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[2]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[3]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[4]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[5]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[6]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[7]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[8]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[9]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[10]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[11]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[12]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[13]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[14]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[15]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[16]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[17]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[18]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[19]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[20]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[21]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[22]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[23]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[24]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[25]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[26]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[27]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[28]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[29]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3886] merging instance '__main___rx_tick_reg[30]' (FDR) to '__main___rx_tick_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\__main___rx_tick_reg[31] )
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[1]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[2]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[3]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[4]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[5]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[6]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[7]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[8]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[9]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[10]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[11]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[12]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[13]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[14]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[15]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[16]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[17]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[18]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[19]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[20]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[21]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[22]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[23]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[24]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[25]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[26]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[27]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[28]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[29]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3886] merging instance 'main_rx_tick_reg[30]' (FDR) to 'main_rx_tick_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_rx_tick_reg[31] )
 INFO: [Synth 8-3886] merging instance 'VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[0]' (FD) to 'VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[0]'
 INFO: [Synth 8-3886] merging instance 'VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[1]' (FD) to 'VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[1]'
 INFO: [Synth 8-3886] merging instance 'VexRiscv/dBusWishbone_DAT_MISO_regNext_reg[2]' (FD) to 'VexRiscv/iBusWishbone_DAT_MISO_regNext_reg[2]'
@@ -769,7 +769,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (VexRiscv/
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (VexRiscv/dataCache_1_/stageB_mmuRsp_allowWrite_reg)
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_allowExecute_reg)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VexRiscv/IBusCachedPlugin_cache/decodeStage_mmuRsp_refilling_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\__main___tx_tick_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\main_tx_tick_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (FD_1)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VexRiscv/IBusCachedPlugin_cache/\decodeStage_mmuRsp_physicalAddress_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (VexRiscv/\_zz_68__reg[0] )
@@ -791,7 +791,7 @@ WARNING: [Synth 8-3332] Sequential element (FD_5) is unused and will be removed 
 WARNING: [Synth 8-3332] Sequential element (FD_6) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (FD_7) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 1717.129 ; gain = 356.340 ; free physical = 591 ; free virtual = 5226
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:29 . Memory (MB): peak = 1733.078 ; gain = 456.086 ; free physical = 778 ; free virtual = 3010
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -876,22 +876,22 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-681] value '140000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Synth 8-681] value '70000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Synth 8-681] value '140000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Synth 8-681] value '70000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Synth 8-681] value '14000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:63]
-WARNING: [Synth 8-681] value '7000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:63]
-WARNING: [Synth 8-681] value '14000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:63]
-WARNING: [Synth 8-681] value '7000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:63]
+WARNING: [Synth 8-681] value '140000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Synth 8-681] value '70000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Synth 8-681] value '140000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Synth 8-681] value '70000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Synth 8-681] value '14000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:63]
+WARNING: [Synth 8-681] value '7000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:63]
+WARNING: [Synth 8-681] value '14000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:63]
+WARNING: [Synth 8-681] value '7000000000.0ps' out of range, cropping to '214748368.0ps' [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:63]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 1738.129 ; gain = 377.340 ; free physical = 433 ; free virtual = 5068
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 1754.078 ; gain = 477.086 ; free physical = 637 ; free virtual = 2877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1744.129 ; gain = 383.340 ; free physical = 427 ; free virtual = 5063
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:46 . Memory (MB): peak = 1760.078 ; gain = 483.086 ; free physical = 625 ; free virtual = 2865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -953,7 +953,7 @@ INFO: [Synth 8-6837] The timing for the instance memdat_reg_5 (implemented as a 
 INFO: [Synth 8-6837] The timing for the instance memdat_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance memdat_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 423 ; free virtual = 5059
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:51 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 669 ; free virtual = 2910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1009,14 +1009,14 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:2233]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:2233]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:5291]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1285]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:3920]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:3920]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:3920]
@@ -1058,27 +1058,27 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:4123]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:4123]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v:4123]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1331]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1331]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1331]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:1331]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1331]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1331]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1331]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:1331]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v:850]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 422 ; free virtual = 5058
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:53 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 666 ; free virtual = 2907
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1091,7 +1091,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 421 ; free virtual = 5057
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:53 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 666 ; free virtual = 2907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1103,25 +1103,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 421 ; free virtual = 5057
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:54 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 662 ; free virtual = 2904
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 421 ; free virtual = 5057
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:54 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 662 ; free virtual = 2903
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 421 ; free virtual = 5057
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:54 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 660 ; free virtual = 2902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 421 ; free virtual = 5057
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:55 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 659 ; free virtual = 2901
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1180,26 +1180,26 @@ Report Instance Areas:
 |5     |  gpio                     |gpio             |    12|
 +------+---------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1833.215 ; gain = 472.426 ; free physical = 420 ; free virtual = 5056
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:55 . Memory (MB): peak = 1849.891 ; gain = 572.898 ; free physical = 659 ; free virtual = 2901
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1899 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1833.215 ; gain = 146.004 ; free physical = 494 ; free virtual = 5130
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1833.223 ; gain = 472.426 ; free physical = 507 ; free virtual = 5143
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:01:39 . Memory (MB): peak = 1849.891 ; gain = 246.477 ; free physical = 728 ; free virtual = 2969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:55 . Memory (MB): peak = 1849.898 ; gain = 572.898 ; free physical = 728 ; free virtual = 2969
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc]
-WARNING: [Vivado 12-4379] -period contains time 140000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:61]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:72]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:72]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc:74]
-Finished Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc]
+Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc]
+WARNING: [Vivado 12-4379] -period contains time 140000000.000000 which cannot be represented in single precision floating point without rounding by more than 1 picosecond [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:61]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:72]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == PRE} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE || ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:72]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff1 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == C} -of_objects [get_cells -hierarchical -filter {ars_ff1 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter {ars_ff2 == TRUE}'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {REF_PIN_NAME == D} -of_objects [get_cells -hierarchical -filter {ars_ff2 == TRUE}]'. [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc:74]
+Finished Parsing XDC File [/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1833.223 ; gain = 0.000 ; free physical = 440 ; free virtual = 5076
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1849.898 ; gain = 0.000 ; free physical = 663 ; free virtual = 2905
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
@@ -1207,11 +1207,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 280 Infos, 284 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 1833.223 ; gain = 472.516 ; free physical = 514 ; free virtual = 5150
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:59 . Memory (MB): peak = 1849.898 ; gain = 572.992 ; free physical = 737 ; free virtual = 2979
 # report_timing_summary -file top_timing_synth.rpt
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2057.066 ; gain = 207.168 ; free physical = 410 ; free virtual = 2672
 # report_utilization -hierarchical -file top_utilization_hierarchical_synth.rpt
 # report_utilization -file top_utilization_synth.rpt
 # opt_design -directive default
@@ -1226,59 +1227,59 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2092.406 ; gain = 50.016 ; free physical = 214 ; free virtual = 4850
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2102.082 ; gain = 44.016 ; free physical = 436 ; free virtual = 2698
 
 Starting Cache Timing Information Task
-Ending Cache Timing Information Task | Checksum: 195b71f0e
+Ending Cache Timing Information Task | Checksum: 1a2959046
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2092.406 ; gain = 0.000 ; free physical = 214 ; free virtual = 4850
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.082 ; gain = 0.000 ; free physical = 437 ; free virtual = 2699
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1fd65cc21
+Phase 1 Retarget | Checksum: 138322c9b
 
-Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 170 ; free virtual = 4806
+Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 446 ; free virtual = 2708
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 7 cells
 INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1f4508d5c
+Phase 2 Constant propagation | Checksum: 19268342e
 
-Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.51 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 170 ; free virtual = 4806
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.92 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 447 ; free virtual = 2709
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 2 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1b70e837d
+Phase 3 Sweep | Checksum: 13b12fab7
 
-Time (s): cpu = 00:00:00.80 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 170 ; free virtual = 4806
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 439 ; free virtual = 2701
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3 cells
 INFO: [Opt 31-1021] In phase Sweep, 6 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-INFO: [Opt 31-194] Inserted BUFG __main___clkout0_BUFG_inst to drive 0 load(s) on clock net __main___clkout0_BUFG
-INFO: [Opt 31-194] Inserted BUFG __main___clkout1_BUFG_inst to drive 0 load(s) on clock net __main___clkout1_BUFG
+INFO: [Opt 31-194] Inserted BUFG main_clkout0_BUFG_inst to drive 0 load(s) on clock net main_clkout0_BUFG
+INFO: [Opt 31-194] Inserted BUFG main_clkout1_BUFG_inst to drive 0 load(s) on clock net main_clkout1_BUFG
 INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 1e1e9f9c7
+Phase 4 BUFG optimization | Checksum: 16543c30e
 
-Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.84 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 170 ; free virtual = 4806
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 442 ; free virtual = 2705
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 INFO: [Opt 31-1021] In phase BUFG optimization, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 1f17bff6b
+Phase 5 Shift Register Optimization | Checksum: 1a2f7c7ad
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 169 ; free virtual = 4806
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 443 ; free virtual = 2705
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1fcdeec11
+Phase 6 Post Processing Netlist | Checksum: 1ae52db7d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 167 ; free virtual = 4804
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 441 ; free virtual = 2703
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -1300,17 +1301,17 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 167 ; free virtual = 4803
-Ending Logic Optimization Task | Checksum: 213a07a4b
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 440 ; free virtual = 2703
+Ending Logic Optimization Task | Checksum: 14f919f35
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2138.406 ; gain = 0.000 ; free physical = 167 ; free virtual = 4803
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2155.082 ; gain = 0.000 ; free physical = 440 ; free virtual = 2703
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=139999985.695 | TNS=0.000 |
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=139999985.695 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -1320,27 +1321,27 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 23 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 46
-Ending PowerOpt Patch Enables Task | Checksum: 26422d7aa
+Ending PowerOpt Patch Enables Task | Checksum: 152311aae
 
-Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 316 ; free virtual = 4783
-Ending Power Optimization Task | Checksum: 26422d7aa
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 403 ; free virtual = 2674
+Ending Power Optimization Task | Checksum: 152311aae
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2437.875 ; gain = 299.469 ; free physical = 324 ; free virtual = 4791
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2454.543 ; gain = 299.461 ; free physical = 408 ; free virtual = 2679
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 26422d7aa
+Ending Final Cleanup Task | Checksum: 152311aae
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 323 ; free virtual = 4790
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 409 ; free virtual = 2679
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 323 ; free virtual = 4790
-Ending Netlist Obfuscation Task | Checksum: 21db67745
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 411 ; free virtual = 2682
+Ending Netlist Obfuscation Task | Checksum: 13328cc72
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 324 ; free virtual = 4791
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 411 ; free virtual = 2682
 INFO: [Common 17-83] Releasing license: Implementation
 30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2437.875 ; gain = 395.484 ; free physical = 323 ; free virtual = 4790
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2454.543 ; gain = 396.477 ; free physical = 411 ; free virtual = 2682
 # place_design -directive default
 Command: place_design -directive default
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -1360,120 +1361,120 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 322 ; free virtual = 4788
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 16b6aeb26
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 400 ; free virtual = 2672
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: efe4af76
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 322 ; free virtual = 4789
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 322 ; free virtual = 4788
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 400 ; free virtual = 2672
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 400 ; free virtual = 2671
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10a671b0c
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16e41f7fa
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 319 ; free virtual = 4785
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 395 ; free virtual = 2670
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 13522869e
+Phase 1.3 Build Placer Netlist Model | Checksum: 2212feb32
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 316 ; free virtual = 4782
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 387 ; free virtual = 2664
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 13522869e
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2212feb32
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 315 ; free virtual = 4782
-Phase 1 Placer Initialization | Checksum: 13522869e
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 388 ; free virtual = 2664
+Phase 1 Placer Initialization | Checksum: 2212feb32
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 315 ; free virtual = 4782
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 388 ; free virtual = 2664
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 13522869e
+Phase 2.1 Floorplanning | Checksum: 2212feb32
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 316 ; free virtual = 4782
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 387 ; free virtual = 2664
 WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
-Phase 2 Global Placement | Checksum: 1103a3cc5
+Phase 2 Global Placement | Checksum: 2149ad931
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 310 ; free virtual = 4776
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 380 ; free virtual = 2658
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1103a3cc5
+Phase 3.1 Commit Multi Column Macros | Checksum: 2149ad931
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4776
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 382 ; free virtual = 2659
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: affc4a57
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 129cf8e35
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4775
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 382 ; free virtual = 2659
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 719fce61
+Phase 3.3 Area Swap Optimization | Checksum: 11d23216e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 308 ; free virtual = 4775
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 382 ; free virtual = 2660
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 719fce61
+Phase 3.4 Pipeline Register Optimization | Checksum: 11d23216e
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 308 ; free virtual = 4775
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 382 ; free virtual = 2660
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 1ccaf77d9
+Phase 3.5 Small Shape Detail Placement | Checksum: 180066c01
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 307 ; free virtual = 4773
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 381 ; free virtual = 2660
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 125dade65
+Phase 3.6 Re-assign LUT pins | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 307 ; free virtual = 4774
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 381 ; free virtual = 2660
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 125dade65
+Phase 3.7 Pipeline Register Optimization | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 307 ; free virtual = 4774
-Phase 3 Detail Placement | Checksum: 125dade65
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 381 ; free virtual = 2660
+Phase 3 Detail Placement | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 307 ; free virtual = 4774
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 382 ; free virtual = 2660
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-Phase 4.1 Post Commit Optimization | Checksum: 125dade65
+Phase 4.1 Post Commit Optimization | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 307 ; free virtual = 4774
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 352 ; free virtual = 2631
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 125dade65
+Phase 4.2 Post Placement Cleanup | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 308 ; free virtual = 4774
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 340 ; free virtual = 2619
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 125dade65
+Phase 4.3 Placer Reporting | Checksum: 1c0d9f6e0
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 308 ; free virtual = 4775
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 338 ; free virtual = 2617
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4775
-Phase 4.4 Final Placement Cleanup | Checksum: 161638f3b
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 338 ; free virtual = 2617
+Phase 4.4 Final Placement Cleanup | Checksum: 201bad0af
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4775
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 161638f3b
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 338 ; free virtual = 2617
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 201bad0af
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4776
-Ending Placer Task | Checksum: 9e69669e
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 337 ; free virtual = 2616
+Ending Placer Task | Checksum: 19f184eeb
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 315 ; free virtual = 4781
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 341 ; free virtual = 2622
 INFO: [Common 17-83] Releasing license: Implementation
 11 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 314 ; free virtual = 4780
+place_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 341 ; free virtual = 2623
 # report_utilization -hierarchical -file top_utilization_hierarchical_place.rpt
 # report_utilization -file top_utilization_place.rpt
 # report_io -file top_io.rpt
-report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 305 ; free virtual = 4771
+report_io: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 331 ; free virtual = 2613
 # report_control_sets -verbose -file top_control_sets.rpt
-report_control_sets: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 309 ; free virtual = 4776
+report_control_sets: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 341 ; free virtual = 2623
 # report_clock_utilization -file top_clock_utilization.rpt
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 # route_design -directive default
@@ -1489,114 +1490,114 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-270] Using Router directive 'default'.
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: 2eeaaf3b ConstDB: 0 ShapeSum: 6f7eb763 RouteDB: 0
+Checksum: PlaceDB: c66691a1 ConstDB: 0 ShapeSum: d8b1bd4a RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 11c576074
+Phase 1 Build RT Design | Checksum: f200459f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 201 ; free virtual = 4668
-Post Restoration Checksum: NetGraph: d4906c92 NumContArr: 47c6f3e2 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 307 ; free virtual = 2586
+Post Restoration Checksum: NetGraph: bb91868d NumContArr: 366ebf12 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 11c576074
+Phase 2.1 Create Timer | Checksum: f200459f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 190 ; free virtual = 4657
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 296 ; free virtual = 2575
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 11c576074
+Phase 2.2 Fix Topology Constraints | Checksum: f200459f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 176 ; free virtual = 4643
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 282 ; free virtual = 2562
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 11c576074
+Phase 2.3 Pre Route Cleanup | Checksum: f200459f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:21 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 177 ; free virtual = 4644
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 282 ; free virtual = 2562
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 23480c76b
+Phase 2.4 Update Timing | Checksum: fed3fcfd
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 167 ; free virtual = 4634
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=N/A    | TNS=N/A    | WHS=-0.183 | THS=-34.800|
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 287 ; free virtual = 2568
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=N/A    | TNS=N/A    | WHS=-0.212 | THS=-34.148|
 
-Phase 2 Router Initialization | Checksum: 23dbf7574
+Phase 2 Router Initialization | Checksum: 147a866bb
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 165 ; free virtual = 4632
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 287 ; free virtual = 2568
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 9f1313c8
+Phase 3 Initial Routing | Checksum: 104e8f5f6
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 163 ; free virtual = 4630
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 285 ; free virtual = 2566
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 9f1313c8
+Phase 4.1.1 Update Timing | Checksum: 104e8f5f6
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 162 ; free virtual = 4629
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 286 ; free virtual = 2566
 WARNING: [Route 35-447] Congestion is preventing the router from routing all nets. The router will prioritize the successful completion of routing all nets over timing optimizations.
-Phase 4.1 Global Iteration 0 | Checksum: 15417c5a8
+Phase 4.1 Global Iteration 0 | Checksum: 111e48a27
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 162 ; free virtual = 4629
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:34 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 286 ; free virtual = 2568
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 462
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 428
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-Phase 4.2 Global Iteration 1 | Checksum: 186a9a5d8
+Phase 4.2 Global Iteration 1 | Checksum: 16c03a410
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4626
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 280 ; free virtual = 2561
 
 Phase 4.3 Global Iteration 2
  Number of Nodes with overlaps = 0
-Phase 4.3 Global Iteration 2 | Checksum: 18b00b4bb
+Phase 4.3 Global Iteration 2 | Checksum: 23fb2f4c9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 156 ; free virtual = 4626
-Phase 4 Rip-up And Reroute | Checksum: 18b00b4bb
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:37 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 286 ; free virtual = 2567
+Phase 4 Rip-up And Reroute | Checksum: 23fb2f4c9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4626
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 285 ; free virtual = 2566
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 18b00b4bb
+Phase 5.1 Delay CleanUp | Checksum: 23fb2f4c9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 156 ; free virtual = 4626
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 285 ; free virtual = 2565
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 18b00b4bb
+Phase 5.2 Clock Skew Optimization | Checksum: 23fb2f4c9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 156 ; free virtual = 4626
-Phase 5 Delay and Skew Optimization | Checksum: 18b00b4bb
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 285 ; free virtual = 2565
+Phase 5 Delay and Skew Optimization | Checksum: 23fb2f4c9
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 156 ; free virtual = 4626
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 284 ; free virtual = 2565
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1751e9e63
+Phase 6.1.1 Update Timing | Checksum: 1fea99a7a
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4626
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=N/A    | TNS=N/A    | WHS=0.020  | THS=0.000  |
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 285 ; free virtual = 2565
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=N/A    | TNS=N/A    | WHS=0.019  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 139f72e81
+Phase 6.1 Hold Fix Iter | Checksum: 21bb694fb
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4626
-Phase 6 Post Hold Fix | Checksum: 139f72e81
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 284 ; free virtual = 2565
+Phase 6 Post Hold Fix | Checksum: 21bb694fb
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4626
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 284 ; free virtual = 2565
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.3881 %
-  Global Horizontal Routing Utilization  = 1.87363 %
+  Global Vertical Routing Utilization    = 1.46066 %
+  Global Horizontal Routing Utilization  = 1.91359 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1605,38 +1606,38 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 16a58c0a5
+Phase 7 Route finalize | Checksum: 21bb694fb
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 155 ; free virtual = 4625
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 284 ; free virtual = 2564
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 16a58c0a5
+Phase 8 Verifying routed nets | Checksum: 21bb694fb
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:28 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 154 ; free virtual = 4624
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:38 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 284 ; free virtual = 2565
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 194dd352c
+Phase 9 Depositing Routes | Checksum: 18483fcb2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 154 ; free virtual = 4624
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 283 ; free virtual = 2563
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=N/A    | TNS=N/A    | WHS=0.020  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=N/A    | TNS=N/A    | WHS=0.019  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 194dd352c
+Phase 10 Post Router Timing | Checksum: 18483fcb2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 156 ; free virtual = 4625
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 283 ; free virtual = 2564
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 174 ; free virtual = 4644
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:39 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 299 ; free virtual = 2580
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 174 ; free virtual = 4644
+route_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:43 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 299 ; free virtual = 2580
 # phys_opt_design -directive default
 Command: phys_opt_design -directive default
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -1649,15 +1650,15 @@ INFO: [Common 17-83] Releasing license: Implementation
 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 # write_checkpoint -force top_route.dcp
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 176 ; free virtual = 4646
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 298 ; free virtual = 2579
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 173 ; free virtual = 4644
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 291 ; free virtual = 2574
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 165 ; free virtual = 4642
-INFO: [Common 17-1381] The checkpoint '/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top_route.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 295 ; free virtual = 2583
+INFO: [Common 17-1381] The checkpoint '/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top_route.dcp' has been generated.
 # report_timing_summary -no_header -no_detailed_paths
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
@@ -1776,7 +1777,7 @@ Table of Contents
 
        WNS(ns)         TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints         WHS(ns)         THS(ns)  THS Failing Endpoints  THS Total Endpoints        WPWS(ns)        TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
        -------         -------  ---------------------  -------------------         -------         -------  ---------------------  -------------------        --------        --------  ----------------------  --------------------  
- 139999984.000           0.000                      0                 4404           0.024           0.000                      0                 4404    70000000.000           0.000                       0                  1783  
+ 139999984.000           0.000                      0                 4404           0.020           0.000                      0                 4404    70000000.000           0.000                       0                  1783  
 
 
 All user specified timing constraints are met.
@@ -1800,7 +1801,7 @@ sys_clk   {0.000 70000000.298}             140000000.596   0.000
 
 Clock                WNS(ns)         TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints         WHS(ns)         THS(ns)  THS Failing Endpoints  THS Total Endpoints        WPWS(ns)        TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                -------         -------  ---------------------  -------------------         -------         -------  ---------------------  -------------------        --------        --------  ----------------------  --------------------  
-sys_clk        139999984.000           0.000                      0                 4404           0.024           0.000                      0                 4404    70000000.000           0.000                       0                  1783  
+sys_clk        139999984.000           0.000                      0                 4404           0.020           0.000                      0                 4404    70000000.000           0.000                       0                  1783  
 
 
 ------------------------------------------------------------------------------------------------
@@ -1828,9 +1829,9 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/camilo/Xilinx/Vivado/2018.3/data/ip'.
 INFO: [DRC 23-27] Running DRC with 4 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top_drc.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top_drc.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2437.875 ; gain = 0.000 ; free physical = 140 ; free virtual = 4625
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2454.543 ; gain = 0.000 ; free physical = 148 ; free virtual = 2453
 # report_timing_summary -datasheet -max_paths 10 -file top_timing.rpt
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
@@ -1887,6 +1888,6 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 INFO: [Common 17-83] Releasing license: Implementation
 9 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2647.531 ; gain = 209.656 ; free physical = 436 ; free virtual = 4590
+write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2664.199 ; gain = 209.656 ; free physical = 484 ; free virtual = 2395
 # quit
-INFO: [Common 17-206] Exiting Vivado at Sun Apr  4 23:13:49 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  8 22:44:16 2021...

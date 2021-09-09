@@ -19,8 +19,7 @@ from litex.soc.cores.clock import *
 
 from Hardware.gpio import gpio
 
-
-# IOs ----------------------------------------------------------------------------------------------
+    # IOs ----------------------------------------------------------------------------------------------
 
 
 _io = [
@@ -71,6 +70,8 @@ _io = [
         IOStandard("LVCMOS33"),
     ),
 ]
+
+
 ## PLL/MMCM CLockGenerator
 class _CRG(Module):
     def __init__(self, clk, rst=0, sys_clk_freq=125e6, in_clk_freq = 100e6):
@@ -99,6 +100,7 @@ class _CRG(Module):
 
 # Platform -----------------------------------------------------------------------------------------
 
+
 class Platform(XilinxPlatform):
     default_clk_name   = "clk100"
     default_clk_period = 1e9/100e6
@@ -106,12 +108,14 @@ class Platform(XilinxPlatform):
     def __init__(self):
        XilinxPlatform.__init__(self, "xc7a35tcpg236-1", _io, toolchain="vivado")
 
-# Design -------------------------------------------------------------------------------------------
-
 # Create our platform (fpga interface)
 platform = Platform()
 
 platform.add_source("Hardware/gpio/gpio.v")
+    
+# Design -------------------------------------------------------------------------------------------
+
+
 class BaseSoC(SoCCore):
     def __init__(self, platform):
 
@@ -154,9 +158,23 @@ class BaseSoC(SoCCore):
             gpio_leds.eq(self.GPIO.LED)     # Salidas
         ]
             
-soc = BaseSoC(platform)
 
-# Build --------------------------------------------------------------------------------------------
 
-builder = Builder(soc, output_dir="build", csr_csv="memoryMap.csv", memory_x="memoryStructure.x", generate_doc="x.doc")
-builder.build(build_name="top")
+def main():
+
+
+
+
+
+
+    soc = BaseSoC(platform)
+
+    # Build --------------------------------------------------------------------------------------------
+    
+
+    builder = Builder(soc, output_dir="build", csr_csv="memoryMap.csv", memory_x="memoryStructure.x", generate_doc="x.doc")
+    builder.build(build_name="top")
+
+
+if __name__ == "__main__":
+    main()

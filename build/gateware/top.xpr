@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xpr">
+<Project Version="7" Minor="39" Path="/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="5ff6c9ad02544d7d8493b33acb420907"/>
+    <Option Name="Id" Val="923b35dad82346899b62ae6343e0106c"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

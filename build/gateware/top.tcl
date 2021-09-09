@@ -6,9 +6,9 @@ set_msg_config -id {Common 17-55} -new_severity {Warning}
 
 # Add Sources
 
-read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/Hardware/gpio/gpio.v}
+read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/Hardware/gpio/gpio.v}
 read_verilog {/home/camilo/LiteX/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v}
-read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.v}
+read_verilog {/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.v}
 
 # Add EDIFs
 

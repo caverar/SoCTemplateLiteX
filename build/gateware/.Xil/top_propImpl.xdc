@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/gateware/top.xdc rfile:../top.xdc id:1 order:EARLY} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/gateware/top.xdc rfile:../top.xdc id:1 order:EARLY} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC A18 [get_ports {serial_tx}]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]

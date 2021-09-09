@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sun Apr  4 23:13:21 2021
-| Host         : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.2 LTS
+| Date         : Wed Sep  8 22:43:42 2021
+| Host         : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_drc -file top_drc.rpt
 | Design       : top
 | Device       : xc7a35tcpg236-1

@@ -7,7 +7,7 @@ CPU_DIRECTORY=/home/camilo/LiteX/litex/litex/soc/cores/cpu/vexriscv
 SOC_DIRECTORY=/home/camilo/LiteX/litex/litex/soc
 COMPILER_RT_DIRECTORY=/home/camilo/LiteX/pythondata-software-compiler_rt/pythondata_software_compiler_rt/data
 export BUILDINC_DIRECTORY
-BUILDINC_DIRECTORY=/home/camilo/MEGA/RequerimientosLiteX/SoCTest2021/build/software/include
+BUILDINC_DIRECTORY=/home/camilo/MEGA/RequerimientosLiteX/SoCTemplateLiteX/build/software/include
 LIBCOMPILER_RT_DIRECTORY=/home/camilo/LiteX/litex/litex/soc/software/libcompiler_rt
 LIBBASE_DIRECTORY=/home/camilo/LiteX/litex/litex/soc/software/libbase
 LIBFATFS_DIRECTORY=/home/camilo/LiteX/litex/litex/soc/software/libfatfs

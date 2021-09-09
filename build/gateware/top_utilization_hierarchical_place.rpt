@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sun Apr  4 23:12:38 2021
-| Host         : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.2 LTS
+| Date         : Wed Sep  8 22:42:41 2021
+| Host         : CAMILO-LAPTOP-LX running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -hierarchical -file top_utilization_hierarchical_place.rpt
 | Design       : top
 | Device       : 7a35tcpg236-1
@@ -21,10 +21,10 @@ Table of Contents
 +----------------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
 |          Instance          |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP48 Blocks |
 +----------------------------+------------------+------------+------------+---------+------+------+--------+--------+--------------+
-| top                        |            (top) |       2421 |       2405 |      16 |    0 | 1718 |     15 |      8 |            4 |
-|   (top)                    |            (top) |        205 |        189 |      16 |    0 |  462 |     14 |      0 |            0 |
-|   VexRiscv                 |         VexRiscv |       2213 |       2213 |       0 |    0 | 1247 |      1 |      8 |            4 |
-|     (VexRiscv)             |         VexRiscv |        929 |        929 |       0 |    0 | 1020 |      0 |      2 |            4 |
+| top                        |            (top) |       2423 |       2407 |      16 |    0 | 1718 |     15 |      8 |            4 |
+|   (top)                    |            (top) |        204 |        188 |      16 |    0 |  462 |     14 |      0 |            0 |
+|   VexRiscv                 |         VexRiscv |       2216 |       2216 |       0 |    0 | 1247 |      1 |      8 |            4 |
+|     (VexRiscv)             |         VexRiscv |        932 |        932 |       0 |    0 | 1020 |      0 |      2 |            4 |
 |     IBusCachedPlugin_cache | InstructionCache |        675 |        675 |       0 |    0 |  106 |      1 |      1 |            0 |
 |     dataCache_1_           |        DataCache |        609 |        609 |       0 |    0 |  121 |      0 |      5 |            0 |
 |   gpio                     |             gpio |          3 |          3 |       0 |    0 |    9 |      0 |      0 |            0 |
