@@ -1,10 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <uart.h>
+#include <console.h>
+
 #include <generated/csr.h>
 #include <generated/soc.h>
 #include <irq.h>
-
-
-#include <console.h>
-#include <uart.h>
 
 void isr(void);
 extern void wait_ms(unsigned int time);

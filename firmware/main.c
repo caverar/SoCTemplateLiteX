@@ -7,6 +7,13 @@
 #include <console.h>
 #include <generated/csr.h>
 
+unsigned int crt0 = 31;
+int crt1 = 57;
+unsigned char crt2 = 's';
+char crt3 = 's';
+unsigned short crt4 = 15;
+short crt5 = 19;
+
 void wait_ms(unsigned int time);
 
 void wait_ms(unsigned int time){
@@ -25,6 +32,8 @@ int main(void) {
    uart_init();
 
    puts("hola");
+   printf("%d, %d, %c, %c, %d, %d\n", crt0, crt1, crt2, crt3, crt4, crt5);
+
    while(1){
       char x = GPIO_SW_REG_read();
       if(x>9){

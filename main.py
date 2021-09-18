@@ -17,7 +17,7 @@ from litex.soc.cores.clock import *
 
 
 
-from Hardware.gpio import gpio
+from hardware.gpio import gpio
 
 # IOs ----------------------------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ _io = [
 
 ## PLL/MMCM CLockGenerator
 class _CRG(Module):
-    def __init__(self, clk, rst=0, sys_clk_freq=125e6, in_clk_freq = 100e6):
+    def __init__(self, clk, rst = 0, sys_clk_freq = 125e6, in_clk_freq = 100e6):
 
         # Clock Domains:
         
@@ -83,10 +83,10 @@ class _CRG(Module):
         
 
         # PLL Instance
-        self.submodules.pll = pll = S7MMCM(speedgrade=-1)
+        self.submodules.pll = pll = S7MMCM(speedgrade = -1)
         pll.register_clkin(clk, in_clk_freq)
-        pll.create_clkout(self.cd_sys, sys_clk_freq,with_reset=False)
-        pll.create_clkout(self.cd_app1, sys_clk_freq/10,with_reset=False)
+        pll.create_clkout(self.cd_sys, sys_clk_freq, with_reset = False)
+        pll.create_clkout(self.cd_app1, sys_clk_freq/10, with_reset = False)
 
         # Timing Constraints
         platform.add_period_constraint(self.cd_sys.clk, int(sys_clk_freq))
@@ -111,7 +111,7 @@ class Platform(XilinxPlatform):
 # Create our platform (fpga interface)
 platform = Platform()
 
-platform.add_source("Hardware/gpio/gpio.v")
+platform.add_source("hardware/gpio/gpio.v")
     
 # Design -------------------------------------------------------------------------------------------
 
@@ -149,7 +149,7 @@ class BaseSoC(SoCCore):
         # GPIO 
         gpio_leds = Cat(*[platform.request("user_led", i) for i in range(4)])
         gpio_sw = Cat(*[platform.request("user_sw", i) for i in range(4)])
-        self.submodules.GPIO= gpio()
+        self.submodules.GPIO = gpio()
         self.add_csr("GPIO")
         self.comb += [
             self.GPIO.CLK.eq(ClockSignal()),
@@ -164,8 +164,9 @@ def main():
 
     soc = BaseSoC(platform)
     # Build --------------------------------------------------------------------------------------------
-    builder = Builder(soc, output_dir="build", csr_csv="memoryMap.csv", memory_x="memoryStructure.x", generate_doc="x.doc")
-    builder.build(build_name="top")
+    builder = Builder(soc, output_dir = "litexBuild", csr_csv = "memoryMap.csv", 
+                      memory_x = "memoryStructure.x", generate_doc = "x.doc")
+    builder.build(build_name = "main")
 
 
 if __name__ == "__main__":
