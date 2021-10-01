@@ -97,6 +97,38 @@ class _CRG(Module):
             self.cd_sys.rst.eq(rst),
             self.cd_app1.rst.eq(rst)
         ]
+        
+        
+# PLL/MMCM CLockGenerator + ResetSync
+class PLL_RSTSYNC(Module):
+
+    def __init__(self, input_clk, input_rst, input_clk_freq, desired_domains:list):
+        self.clock_domains.cd_in = ClockDomain()
+        count = 0
+        self.submodules.pll = pll = S7MMCM(speedgrade = -1)
+        pll.register_clkin(input_clk, input_clk_freq)
+        for i in desired_domains:
+            if count == 0:
+                self.clock_domains.cd_sys = ClockDomain()
+                pll.create_clkout(self.cd_sys, desired_domains[0], with_reset = False)
+                platform.add_period_constraint(self.cd_sys.clk, int((1e9)/desired_domains[0]))
+                self.submodules.cd_sys_rstsync = XilinxAsyncResetSynchronizerImpl(self.cd_sys, input_rst)
+            elif count == 1:
+                self.clock_domains.cd_app1 = ClockDomain()
+                pll.create_clkout(self.cd_app1, desired_domains[1], with_reset = False)
+                platform.add_period_constraint(self.cd_app1.clk, int((1e9)/desired_domains[1]))
+                self.submodules.cd_app1_rstsync = XilinxAsyncResetSynchronizerImpl(self.cd_app1, input_rst)
+            elif count == 2:
+                self.clock_domains.cd_app2 = ClockDomain()
+                pll.create_clkout(self.cd_app2, desired_domains[2], with_reset = False)
+                platform.add_period_constraint(self.cd_app2.clk, int((1e9)/desired_domains[2]))
+                self.submodules.cd_app2_rstsync = XilinxAsyncResetSynchronizerImpl(self.cd_app2, input_rst)
+
+                #setattr(self.clock_domains, "cd_"+str(count),ClockDomain())
+                #pll.create_clkout(getattr(self, "cd_"+str(count)), desired_domains[count], with_reset = False)
+                #platform.add_period_constraint(getattr(self, "cd_"+str(count)).clk, int((1e9)/desired_domains[count]))
+                #setattr(self.submodules, "cd_"+str(count)+"_rstsync", XilinxAsyncResetSynchronizerImpl(getattr(self, "cd_"+str(count)), input_rst))
+            count+=1
 
 # Platform -----------------------------------------------------------------------------------------
 
