@@ -1,6 +1,0 @@
-*.log
-*.d
-*.o
-*.a
-*.pyc
-__pycache__
